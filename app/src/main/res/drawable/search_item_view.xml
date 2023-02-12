@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:height="@dimen/_30sdp"
+        android:width="@dimen/_30sdp">
+        <shape android:shape="oval">
+            <solid
+                android:color="@color/green"
+                >
+            </solid>
+        </shape>
+    </item>
+    <item
+        android:drawable="@drawable/ic_search"
+        android:top="@dimen/_5sdp"
+        android:bottom="@dimen/_5sdp"
+        android:right="@dimen/_5sdp"
+        android:left="@dimen/_5sdp"
+
+
+        >
+
+    </item>
+</layer-list>

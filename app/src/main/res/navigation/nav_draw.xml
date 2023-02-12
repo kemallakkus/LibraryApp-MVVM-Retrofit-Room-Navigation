@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_draw"
+    app:startDestination="@id/home">
+
+    <fragment
+        android:id="@+id/categories"
+        android:name="com.kemalakkus.libraryapp_mvvm_retrofit_room_navigation.fragments.CategoryFragment"
+        android:label="Categories"
+        tools:layout="@layout/fragment_category" >
+        <action
+            android:id="@+id/action_categories_to_home"
+            app:destination="@id/home" />
+        <action
+            android:id="@+id/action_categories_to_detailFragment"
+            app:destination="@id/detailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/home"
+        android:name="com.kemalakkus.libraryapp_mvvm_retrofit_room_navigation.fragments.HomeFragment"
+        android:label="Home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_home_to_detailFragment"
+            app:destination="@id/detailFragment" />
+        <action
+            android:id="@+id/action_home_to_categories"
+            app:destination="@id/categories" />
+        <action
+            android:id="@+id/action_home_to_searchFragment"
+            app:destination="@id/searchFragment" />
+        <action
+            android:id="@+id/action_home_to_libraryFragment"
+            app:destination="@id/libraryFragment" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/detailFragment"
+        android:name="com.kemalakkus.libraryapp_mvvm_retrofit_room_navigation.fragments.DetailFragment"
+        android:label="fragment_detail"
+        tools:layout="@layout/fragment_detail" >
+        <action
+            android:id="@+id/action_detailFragment_to_home"
+            app:destination="@id/home" />
+        <argument
+            android:name="book"
+            app:argType="com.kemalakkus.libraryapp_mvvm_retrofit_room_navigation.model.Book" />
+        <action
+            android:id="@+id/action_detailFragment_to_libraryFragment"
+            app:destination="@id/libraryFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/searchFragment"
+        android:name="com.kemalakkus.libraryapp_mvvm_retrofit_room_navigation.fragments.SearchFragment"
+        android:label="fragment_search"
+        tools:layout="@layout/fragment_search" >
+        <action
+            android:id="@+id/action_searchFragment_to_home"
+            app:destination="@id/home" />
+        <action
+            android:id="@+id/action_searchFragment_to_detailFragment"
+            app:destination="@id/detailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/libraryFragment"
+        android:name="com.kemalakkus.libraryapp_mvvm_retrofit_room_navigation.fragments.LibraryFragment"
+        android:label="fragment_library"
+        tools:layout="@layout/fragment_library" >
+        <action
+            android:id="@+id/action_libraryFragment_to_home"
+            app:destination="@id/home" />
+        <action
+            android:id="@+id/action_libraryFragment_to_detailFragment"
+            app:destination="@id/detailFragment" />
+    </fragment>
+</navigation>
