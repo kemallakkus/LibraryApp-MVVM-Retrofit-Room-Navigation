@@ -1,5 +1,7 @@
 # LibraryApp-MVVM-Retrofit-Room-Navigation
 
+Library App uses GutendexAPI to view books. You can view the books by category. You can also search by typing the author's name or the name of the book in the search section. You can save the books you like and want to read later in the library area.
+
 <img src = "https://user-images.githubusercontent.com/105845393/218324518-504532f4-8379-4f46-9cd0-9e64a53f80f0.png" width = "200" height = "400">
 <img src = "https://user-images.githubusercontent.com/105845393/218324569-448ca54a-27b8-4201-99a5-970e1e834f9d.png" width = "200" height = "400">
 <img src = "https://user-images.githubusercontent.com/105845393/218324581-b70f52cf-4c2c-4d8b-b574-03b51ab40251.png" width = "200" height = "400">
